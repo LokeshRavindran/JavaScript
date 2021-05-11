@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/7a21b019af.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Tasks List</title>
+  </head>
+  <body>
+    <div class="container">
+      <form autocomplete="off" id="form">
+        <div class="section-1">
+          <h1>Task List</h1>
+          <br />
+          <!-- <p>New Task</p> -->
+          <div class="input-wrap">
+            <input type="text" id="task" name="task" value="" />
+            <label for="task">New Task</label>
+          </div>
+          <button type="submit" class="btn">ADD TASK</button>
+        </div>
+      </form>
+      <hr />
+      <div id="outside-form">
+        <div class="section-2">
+          <h1>Tasks</h1>
+          <ul></ul>
+
+          <button type="submit" class="btn">CLEAR TASKS</button>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
