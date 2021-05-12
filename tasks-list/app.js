@@ -41,7 +41,8 @@ addTask.addEventListener("click", function (e) {
 
     task.value = "";
   }
-  // e.preventDefault();
+  location.reload();
+  e.preventDefault();
 });
 
 // clearing all the tasks
