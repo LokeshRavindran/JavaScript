@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-image: url("../img/2.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px 0px;
+  height: 100vh; }
+
+body::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1; }
+
+.container {
+  max-width: 600px;
+  margin: auto; }
+
+#game-wrap {
+  background-color: white;
+  border-radius: 10px;
+  margin: 1rem;
+  text-align: center;
+  padding: 1rem; }
+  #game-wrap h1 {
+    margin: 0.5rem 0rem; }
+  #game-wrap p {
+    margin: 0.5rem 0rem; }
+  #game-wrap input,
+  #game-wrap button {
+    margin: 0.5rem 0rem;
+    padding: 0.5rem;
+    outline: none; }
+  #game-wrap input {
+    width: 10rem; }
+  #game-wrap #output-correct {
+    color: green; }
+  #game-wrap #output-wrong {
+    color: red; }
