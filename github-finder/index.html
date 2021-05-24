@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Github Finder</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="to-wrap">
+          <h2>Github Finder</h2>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="to-wrap">
+          <!-- section to enter value-->
+          <section id="form">
+            <form autocomplete="off">
+              <h1>Search Github Users</h1>
+              <p>Enter a username to fetch users profile and repos</p>
+              <label for="username"></label>
+              <input
+                type="text"
+                name="username"
+                id="username"
+                placeholder="Github Username.."
+              />
+            </form>
+          </section>
+          <!-- section to display output -->
+          <section id="output">
+            <div id="basic-details"></div>
+            <div id="repos">
+              <h2>Latest Repos</h2>
+              <ul id="latest-repos"></ul>
+            </div>
+            <div id="error"></div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="to-wrap">
+          <p>Github Finder &copy;</p>
+        </div>
+      </div>
+    </footer>
+    <script src="./app.js"></script>
+  </body>
+</html>
