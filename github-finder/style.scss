@@ -158,6 +158,7 @@ main {
               flex: 1;
               margin: 0;
               display: flex;
+
               li {
                 padding: 0.6rem;
                 margin-right: 1rem;
@@ -189,21 +190,37 @@ footer {
   }
 }
 
-//media queries
 @media (max-width: 600px) {
+  .to-wrap {
+    text-align: center;
+  }
   #output {
     #basic-details {
       flex-direction: column;
       #image-section {
         flex-direction: row;
       }
+      #details-section {
+        #details-1 {
+          ul {
+            flex-direction: column;
+            li {
+              margin-right: 0rem;
+              margin-bottom: 0.5rem;
+            }
+          }
+        }
+      }
     }
   }
   #repos {
     #latest-repos {
       li {
+        flex-direction: column;
+        text-align: center;
         #repo-details {
           word-wrap: break-all;
+          justify-content: center;
           li {
             margin-right: 0.2rem;
           }

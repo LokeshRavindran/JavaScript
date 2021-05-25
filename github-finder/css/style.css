@@ -142,11 +142,22 @@ footer {
     text-align: center; }
 
 @media (max-width: 600px) {
+  .to-wrap {
+    text-align: center; }
   #output #basic-details {
     flex-direction: column; }
     #output #basic-details #image-section {
       flex-direction: row; }
-  #repos #latest-repos li #repo-details {
-    word-wrap: break-all; }
-    #repos #latest-repos li #repo-details li {
-      margin-right: 0.2rem; } }
+    #output #basic-details #details-section #details-1 ul {
+      flex-direction: column; }
+      #output #basic-details #details-section #details-1 ul li {
+        margin-right: 0rem;
+        margin-bottom: 0.5rem; }
+  #repos #latest-repos li {
+    flex-direction: column;
+    text-align: center; }
+    #repos #latest-repos li #repo-details {
+      word-wrap: break-all;
+      justify-content: center; }
+      #repos #latest-repos li #repo-details li {
+        margin-right: 0.2rem; } }
