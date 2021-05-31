@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+.container {
+  max-width: 1100px;
+  margin: auto; }
+
+.wrap-items {
+  margin: 0rem 1rem; }
+
+body {
+  background-color: #ebebeb; }
+
+.btn {
+  margin: 1rem 0rem;
+  padding: 0.5rem 0.8rem; }
+
+.add-edit-btn {
+  cursor: pointer;
+  color: white;
+  border: none; }
+  .add-edit-btn i {
+    margin: 0rem 0.3rem; }
+
+header {
+  text-align: center;
+  background-color: rgba(0, 132, 255, 0.973);
+  color: white;
+  padding: 1rem; }
+  header .container .wrap-items {
+    display: flex;
+    justify-content: space-between; }
+    header .container .wrap-items h2 {
+      color: white; }
+    header .container .wrap-items button {
+      justify-content: flex-end;
+      background-color: white;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      margin: 0; }
+    header .container .wrap-items button:hover {
+      background-color: #ebebeb; }
+
+#main .container .wrap-items {
+  margin-top: 1rem;
+  background-color: white;
+  padding: 1rem;
+  border: 0.1rem solid #999; }
+  #main .container .wrap-items p {
+    font-size: 2rem;
+    margin: 0.5rem 0rem; }
+  #main .container .wrap-items #item-cal {
+    display: flex;
+    justify-content: space-between; }
+    #main .container .wrap-items #item-cal #item,
+    #main .container .wrap-items #item-cal #item-calories {
+      display: flex;
+      flex-direction: column;
+      flex: 1; }
+      #main .container .wrap-items #item-cal #item label,
+      #main .container .wrap-items #item-cal #item-calories label {
+        margin: 0.2rem 0rem;
+        font-size: 0.9rem;
+        width: 95%; }
+      #main .container .wrap-items #item-cal #item input,
+      #main .container .wrap-items #item-cal #item-calories input {
+        margin: 0.2rem 0rem;
+        padding: 0.6rem 0rem;
+        font-size: 1rem;
+        border: none;
+        border-bottom: 1px solid black;
+        width: 95%;
+        outline: none; }
+      #main .container .wrap-items #item-cal #item input:focus,
+      #main .container .wrap-items #item-cal #item-calories input:focus {
+        border-bottom: 1px solid #47c18e; }
+  #main .container .wrap-items #add-edit #add #add-meal {
+    background-color: #0000ff; }
+  #main .container .wrap-items #add-edit #add #add-meal:hover {
+    background-color: #3939fc; }
+  #main .container .wrap-items #add-edit #edit {
+    display: flex; }
+    #main .container .wrap-items #add-edit #edit #edit-meal {
+      margin-right: 1rem;
+      background-color: orange; }
+    #main .container .wrap-items #add-edit #edit #edit-meal:hover {
+      background-color: #ffb428; }
+    #main .container .wrap-items #add-edit #edit #delete-meal {
+      background-color: #ff5100; }
+    #main .container .wrap-items #add-edit #edit #delete-meal:hover {
+      background-color: #ff651e; }
+    #main .container .wrap-items #add-edit #edit #back {
+      margin-left: auto;
+      background-color: #646464; }
+    #main .container .wrap-items #add-edit #edit #back:hover {
+      background-color: grey; }
+
+#total .container .wrap-items {
+  text-align: center;
+  margin: 1rem 0rem;
+  font-size: 2rem; }
+
+#output .container .wrap-items ul {
+  width: 100%;
+  border-collapse: collapse; }
+  #output .container .wrap-items ul li {
+    display: flex;
+    background-color: white;
+    margin: 0.2rem 0rem;
+    border: 0.1rem solid #999;
+    padding: 0.5rem 1rem;
+    justify-content: space-between; }
+    #output .container .wrap-items ul li i {
+      background: transparent;
+      border: none;
+      cursor: pointer; }
+
+@media (max-width: 768px) {
+  #item-cal {
+    flex-direction: column; }
+  #item {
+    margin-bottom: 1rem; } }

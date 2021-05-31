@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/7a21b019af.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Track Calorie</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="wrap-items">
+          <h2>Track Calorie</h2>
+          <button class="btn" id="clear-all">Clear All</button>
+        </div>
+      </div>
+    </header>
+    <main id="main">
+      <div class="container">
+        <div class="wrap-items">
+          <p>Add Meal / Food item</p>
+          <div id="item-cal">
+            <div id="item">
+              <label for="meal">Meal</label>
+              <input type="text" id="meal" placeholder="Add Item" />
+            </div>
+            <div id="item-calories">
+              <label for="calories">Calories</label>
+              <input
+                type="number"
+                placeholder="Add Calories"
+                id="calories"
+                min="0"
+                max="1000"
+              />
+            </div>
+          </div>
+          <div id="add-edit">
+            <div id="add">
+              <button class="btn btn add-edit-btn" id="add-meal">
+                <i class="fas fa-plus"></i>ADD MEAL
+              </button>
+            </div>
+            <div id="edit">
+              <button class="btn add-edit-btn" id="edit-meal">
+                <i class="fas fa-edit"></i>EDIT MEAL
+              </button>
+              <button class="btn btn add-edit-btn" id="delete-meal">
+                <i class="fas fa-trash-alt"></i>DELETE MEAL
+              </button>
+              <button class="btn btn add-edit-btn" id="back">
+                <i class="fas fa-chevron-circle-left"></i>BACK
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div id="total">
+      <div class="container">
+        <div class="wrap-items">
+          <strong id="total-calories"></strong>
+        </div>
+      </div>
+    </div>
+    <div id="output">
+      <div class="container">
+        <div class="wrap-items">
+          <ul id="items">
+            <!-- <li>
+              <p><strong>Steak Dinner:</strong><em> 600 calories</em></p>
+              <button class="edit"><i class="fas fa-pen"></i></button>
+            </li>
+
+            <li>
+              <p><strong>Steak Dinner:</strong> <em> 600 calories</em></p>
+              <button class="edit"><i class="fas fa-pen"></i></button>
+            </li>
+
+            <li>
+              <p><strong>Steak Dinner:</strong> <em> 600 calories</em></p>
+              <button class="edit"><i class="fas fa-pen"></i></button>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

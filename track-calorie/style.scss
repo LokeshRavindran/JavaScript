@@ -1,0 +1,182 @@
+//css reset
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+.wrap-items {
+  margin: 0rem 1rem;
+}
+body {
+  background-color: rgb(235, 235, 235);
+}
+.btn {
+  margin: 1rem 0rem;
+  padding: 0.5rem 0.8rem;
+}
+.add-edit-btn {
+  cursor: pointer;
+  color: white;
+  border: none;
+  i {
+    margin: 0rem 0.3rem;
+  }
+}
+
+//header
+header {
+  text-align: center;
+  background-color: rgba(0, 132, 255, 0.973);
+  color: white;
+  padding: 1rem;
+  .container {
+    .wrap-items {
+      display: flex;
+      justify-content: space-between;
+      h2 {
+        color: white;
+      }
+      button {
+        justify-content: flex-end;
+        background-color: white;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        margin: 0;
+      }
+      button:hover {
+        background-color: rgb(235, 235, 235);
+      }
+    }
+  }
+}
+
+//main
+#main {
+  .container {
+    .wrap-items {
+      margin-top: 1rem;
+      background-color: white;
+      padding: 1rem;
+      border: 0.1rem solid #999;
+      p {
+        font-size: 2rem;
+        margin: 0.5rem 0rem;
+      }
+      #item-cal {
+        display: flex;
+        justify-content: space-between;
+        #item,
+        #item-calories {
+          display: flex;
+          flex-direction: column;
+          flex: 1;
+
+          label {
+            margin: 0.2rem 0rem;
+            font-size: 0.9rem;
+            width: 95%;
+          }
+          input {
+            margin: 0.2rem 0rem;
+            padding: 0.6rem 0rem;
+            font-size: 1rem;
+            border: none;
+            border-bottom: 1px solid black;
+            width: 95%;
+            outline: none;
+          }
+
+          input:focus {
+            border-bottom: 1px solid #47c18e;
+          }
+        }
+      }
+      #add-edit {
+        #add {
+          #add-meal {
+            background-color: #0000ff;
+          }
+          #add-meal:hover {
+            background-color: #3939fc;
+          }
+        }
+        #edit {
+          display: flex;
+          #edit-meal {
+            margin-right: 1rem;
+            background-color: orange;
+          }
+          #edit-meal:hover {
+            background-color: rgb(255, 180, 40);
+          }
+
+          #delete-meal {
+            background-color: rgb(255, 81, 0);
+          }
+          #delete-meal:hover {
+            background-color: rgb(255, 101, 30);
+          }
+          #back {
+            margin-left: auto;
+            background-color: rgb(100, 100, 100);
+          }
+          #back:hover {
+            background-color: grey;
+          }
+        }
+      }
+    }
+  }
+}
+
+// total calories
+#total {
+  .container {
+    .wrap-items {
+      text-align: center;
+      margin: 1rem 0rem;
+      font-size: 2rem;
+    }
+  }
+}
+
+//output
+#output {
+  .container {
+    .wrap-items {
+      ul {
+        width: 100%;
+        border-collapse: collapse;
+
+        li {
+          display: flex;
+          background-color: white;
+          margin: 0.2rem 0rem;
+          border: 0.1rem solid #999;
+          padding: 0.5rem 1rem;
+          justify-content: space-between;
+          i {
+            background: transparent;
+            border: none;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #item-cal {
+    flex-direction: column;
+  }
+  #item {
+    margin-bottom: 1rem;
+  }
+}
